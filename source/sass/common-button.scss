@@ -1,0 +1,58 @@
+.common-button {
+  font-family: $oswald-regular;
+  color: $white;
+  font-size: 14px;
+  text-transform: uppercase;
+  text-decoration: none;
+  background: $green;
+  width: 280px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+  cursor: pointer;
+}
+
+.common-button:hover {
+  background-color: $green-hvr;
+}
+
+.common-button:active span {
+  opacity: 0.4;
+}
+
+.common-button--light {
+  background: $light-grey;
+  color: $dark-grey;
+}
+
+.common-button--light:hover {
+  background: $grey-hvr;
+}
+
+.common-button--light:active span {
+  opacity: 0.4;
+}
+
+@media (min-width: $tablet-width) {
+  .common-button {
+    width: 245px;
+  }
+
+  .common-button--long {
+    width: 635px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .common-button {
+    width: 170px;
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  .common-button--long {
+    width: 245px;
+  }
+}

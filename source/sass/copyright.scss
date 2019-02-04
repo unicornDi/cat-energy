@@ -1,0 +1,42 @@
+.copyright {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.copyright__link {
+  text-decoration: none;
+  color: #444444;
+  font-family: $arial;
+  font-size: 16px;
+  line-height: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 90%;
+}
+
+.copyright__logo {
+  fill: #666666;
+  transition: 0.3s;
+}
+
+.copyright__link:hover .copyright__logo {
+  fill: $green;
+}
+
+.copyright__link:active {
+  opacity: 0.5;
+}
+
+@media (min-width: $tablet-width) {
+  .copyright__link {
+    width: 200px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .copyright {
+    width: 162px;
+  }
+}

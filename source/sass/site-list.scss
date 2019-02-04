@@ -1,0 +1,26 @@
+.site-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+}
+
+.site-list__item {
+  height: 65px;
+  width: 320px;
+  border-top: 1px solid $light-grey;
+}
+
+@media (min-width: $tablet-width) {
+  .site-list {
+    flex-direction: row;
+    justify-content: space-around;
+    min-width: 600px;
+  }
+
+  .site-list__item {
+    border-style: none;
+    width: auto;
+  }
+}

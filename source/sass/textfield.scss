@@ -1,0 +1,70 @@
+.textfield {
+  height: 45px;
+  border: 1px solid $input;
+  box-sizing: border-box;
+  padding: 15px;
+  outline: none;
+  font-family: $oswald-regular;
+  text-transform: uppercase;
+}
+
+.textfield:hover {
+  border-color: $border-hvr;
+}
+
+.textfield:focus {
+  border: 2px solid $dark-grey;
+}
+
+.textfield:invalid {
+  border: 2px solid $error;
+}
+
+.name-textfield {
+  width: 230px;
+}
+
+.weight-textfield {
+  width: 205px;
+}
+
+.age-textfield {
+  width: 172px;
+}
+
+@media (min-width: $tablet-width) {
+  .textfield {
+    margin-left: 15px;
+    font-size: 20px;
+  }
+
+  .name-textfield {
+    width: 567px;
+  }
+
+  .weight-textfield {
+    width: 539px;
+  }
+
+  .age-textfield {
+    width: 497px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .textfield {
+    height: 50px;
+  }
+
+  .name-textfield {
+    width: 506px;
+  }
+
+  .weight-textfield {
+    width: 475px;
+  }
+
+  .age-textfield {
+    width: 435px;
+  }
+}

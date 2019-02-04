@@ -1,0 +1,15 @@
+.section-title {
+  font-family: $oswald-regular;
+  font-size: 36px;
+  line-height: 60px;
+}
+
+@media (min-width: $tablet-width) {
+  .section-title {
+    font-size: 60px;
+  }
+
+  .section-title--margin {
+    margin-bottom: 140px;
+  }
+}

@@ -1,0 +1,25 @@
+.container {
+  max-width: 320px;
+  margin: 0 auto;
+}
+
+.container--flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: $tablet-width) {
+  .container {
+    min-width: 708px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .container {
+    max-width: 1220px;
+  }
+
+  .container--full-width {
+    min-width: 100%;
+  }
+}

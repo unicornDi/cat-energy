@@ -1,0 +1,141 @@
+.order-form {
+  font-family: $oswald-regular;
+}
+
+.order-form__text {
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
+.order-form__legend {
+  text-transform: uppercase;
+  font-size: 24px;
+  line-height: 24px;
+  margin-left: 0;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.order-form__wrapper {
+  border-style: none;
+  border-top: 3px solid $green;
+  text-transform: uppercase;
+  font-size: 16px;
+  padding-left: 0;
+  padding-bottom: 30px;
+}
+
+.questionnaire {
+  border: none;
+}
+
+.order-form__label {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 24px;
+  font-size: 16px;
+}
+
+.category-title {
+  font-size: 24px;
+  line-height: 24px;
+}
+
+.comment-textarea {
+  width: 100%;
+  margin-top: 35px;
+  resize: none;
+  border: 1px solid $light-grey;
+}
+
+::placeholder {
+  text-transform: uppercase;
+  font-family: $oswald-regular;
+  color: $dark-grey;
+  padding-left: 20px;
+  padding-top: 15px;
+}
+
+.order-form__button-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.order-form__common-button {
+  border-style: none;
+}
+
+@media (min-width: $tablet-width) {
+  .order-form {
+    margin-top: 70px;
+  }
+
+  .order-form__text {
+    width: 325px;
+    font-size: 20px;
+    line-height: 30px;
+    margin-top: 60px;
+    align-self: flex-start;
+    margin-left: 30px;
+  }
+
+  .order-form__label {
+    font-size: 20px;
+    line-height: 20px;
+    justify-content: flex-start;
+  }
+
+  .order-form__legend {
+    margin-left: 30px;
+  }
+
+  .order-form__button-wrapper {
+    flex-direction: row;
+    margin-left: $horizontal-margin-desktop-legend;
+    margin-bottom: 80px;
+    justify-content: space-between;
+    width: 50%;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .form-container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .order-form__title {
+    margin-left: 90px;
+  }
+
+  .form-container--row {
+    flex-direction: row;
+  }
+
+  .order-form__common-button {
+    width: 570px;
+  }
+
+  .order-form__label {
+    margin-left: 40px;
+  }
+
+  .order-form__legend {
+    margin-left: $horizontal-margin-desktop-legend;
+  }
+
+  .textarea-container {
+    margin-left: $horizontal-margin-desktop-legend;
+  }
+
+  .order-form__button-wrapper {
+    width: 60%;
+  }
+
+  .comment-textarea {
+    margin-left: 20px;
+  }
+}
